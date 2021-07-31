@@ -7,7 +7,7 @@ export default function CoinIndexPreviewCard(props) {
   const changeSign = isPositive ? '+' : '';
 
   return (
-    <a {...props} href={`/coin/${props.data.symbol}`} className={cx(styles.card, props.className)}>
+    <a {...props} href={`/coin/${props.data.id}`} className={cx(styles.card, props.className)}>
       <span className={styles.card__coin_symbol}>{props.data.symbol}</span>
       <span className={styles.card__coin_name}>{props.data.name}</span>
       <div className={styles.card__mini_chart}></div>
