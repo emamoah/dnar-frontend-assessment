@@ -100,7 +100,7 @@ export default function Home(props) {
                 ? 'Loading coins...'
                 : allCoinsError
                   ? 'Error loading coins.'
-                  : allCoins.map(coin => <CoinNameCard key={coin.id} _name={coin.name} symbol={coin.symbol} />)
+                  : allCoins.map(coin => <CoinNameCard key={coin.id} _name={coin.name} symbol={coin.symbol} _id={coin.id} />)
               }
             </div>
           </Scrollable>
