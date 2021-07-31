@@ -14,7 +14,7 @@ export default function Converter() {
   useEffect(() => {
     setCoin(coinSelect.current.value);
     setCurrency(currencySelect.current.value);
-  });
+  }, []);
 
   return (
     <div className={styles.container}>

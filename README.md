@@ -2,4 +2,4 @@
 
 ### Author: Emmanuel Amoah
 
-[View Demo]()
+[View Demo](https://dnar-frontend-assessment.netlify.app)
