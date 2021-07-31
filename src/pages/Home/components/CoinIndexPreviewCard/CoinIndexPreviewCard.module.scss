@@ -17,6 +17,7 @@
     align-self: end;
     font-weight: 500;
     font-size: 1.2em;
+    text-transform: uppercase;
   }
   &__coin_name {
     grid-area: name;
@@ -27,8 +28,12 @@
   &__mini_chart {
     grid-area: chart;
     align-self: center;
-    // background: red;
     height: 100%;
+    overflow: hidden;
+    &__content {
+      height: 100%;
+      width: 100%;
+    }
   }
   &__coin_value {
     grid-area: value;

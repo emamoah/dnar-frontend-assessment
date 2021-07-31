@@ -27,7 +27,7 @@ export default function Converter() {
         </select>
         <span>TO</span>
         <select name="currency" id="currency" ref={currencySelect} onChange={(e) => setCurrency(e.target.value)}>
-          <option value="usd">usd</option>
+          <option value="usd">USD</option>
         </select>
       </div>
       <div className={styles.container__values}>
