@@ -13,7 +13,7 @@ export default function Chart(props) {
     <div className={styles.container}>
       <div className={styles.container__header}>
         <img src={data?.image.thumb} alt={data?.name} />
-        <span className={styles.container__header__symbol}>{coin_id}</span>
+        <span className={styles.container__header__symbol}>{data?.name}</span>
         <span className={styles.container__header__price}>${data?.market_data.current_price.usd || '-'}</span>
         <span className={
           cx(styles.container__header__percent, {
