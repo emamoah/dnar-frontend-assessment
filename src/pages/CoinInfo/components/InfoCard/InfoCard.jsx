@@ -19,7 +19,7 @@ export default function InfoCard(props) {
           <Scrollable className={styles.card__description__text}>
             <p dangerouslySetInnerHTML={{__html:
               (!isPending && error)
-              ? 'Error fetching data'
+              ? 'Error fetching data.'
               : isPending
                 ? 'Loading description...'
                 : data?.description.en || 'No description available.'
