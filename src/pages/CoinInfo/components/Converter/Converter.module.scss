@@ -18,6 +18,7 @@
       font-size: .8em;
     }
     select {
+      text-transform: uppercase;
       border: 1px solid #EEE6;
       padding: .5em 1em;
       border-radius: .3em;
@@ -47,5 +48,6 @@
     margin-top: 1.5em;
     font-size: .9em;
     text-align: right;
+    text-transform: uppercase;
   }
 }

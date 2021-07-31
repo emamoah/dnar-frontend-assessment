@@ -149,7 +149,7 @@
 
   &.tablet {
     grid-template: "market_leaders events" minmax(300px, 1fr)
-                   "all_coins      events" 250px / 1fr 300px;
+                   "all_coins      events" minmax(250px, .3fr) / 1fr 300px;
   }
   &.tablet &__all_coins {
     grid-template: none / repeat(2, minmax(0,1fr));
