@@ -1,0 +1,35 @@
+.container {
+  transition: scrollbar-color .5s;
+  position: relative;
+  overflow: auto;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    transition: .5s;
+  }
+  &::-webkit-scrollbar-track {
+    transition: .5s;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    transition: .5s;
+    background-color: transparent;
+  }
+
+  &.tablet, &.mobile {
+    scrollbar-color: rgba(177,174,184,.04) transparent;
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(177,174,184,.04);
+    }
+  }
+
+  &--active {
+    scrollbar-color: rgba(177,174,184,.04) transparent;
+    &::-webkit-scrollbar-thumb {
+      background-color: rgba(177,174,184,.04);
+    }
+  }
+}

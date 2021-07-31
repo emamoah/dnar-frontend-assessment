@@ -1,0 +1,68 @@
+.card {
+  width: 100%;
+
+  &__section {
+    margin-bottom: 1em;
+    &__heading {
+      font-weight: 500;
+      margin-bottom: .5em;
+    }
+  }
+
+  &__description {
+    background: linear-gradient(130deg, #6800D6, #260068);
+    border-radius: .3em;
+    color: #fff;
+    padding: 1em;
+
+    &__text {
+      max-height: 200px;
+
+      a {
+        text-decoration: underline;
+        font-weight: 500;
+      }
+    }
+
+  }
+
+  &__links {
+    a {
+      display: inline-block;
+      margin-right: 1em;
+      img {
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
+  }
+
+  &__table {
+    display: grid;
+    grid-template: none / auto 1fr;
+    align-items: center;
+    gap: .5em;
+    margin-top: 1em;
+    font-size: .9em;
+
+    &__key {
+      white-space: nowrap;
+    }
+
+    &__value {
+      font-weight: 600;
+      text-align: right;
+    }
+
+    &__alexa_rank {
+      font-size: 1.8em;
+    }
+  }
+
+  &__divider {
+    margin: 1em auto;
+    width: 100%;
+    height: 1px;
+    background: #eee;
+  }
+}

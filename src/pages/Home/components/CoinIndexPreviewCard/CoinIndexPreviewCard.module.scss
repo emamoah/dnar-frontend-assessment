@@ -1,0 +1,52 @@
+.card {
+  background: linear-gradient(130deg, #6800D6, #260068);
+  border-radius: .3em;
+  user-select: none;
+  color: #fff;
+  display: grid;
+  grid-template-areas: "symbol chart value"
+                       "name   chart percentage";
+  grid-template-rows: auto;
+  grid-template-columns: auto 1fr auto;
+  gap: 0 8px;
+  padding: 1.5em 2em;
+  line-height: 1.5em;
+
+  &__coin_symbol {
+    grid-area: symbol;
+    align-self: end;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+  &__coin_name {
+    grid-area: name;
+    align-self: start;
+    font-size: .9em;
+    white-space: nowrap;
+  }
+  &__mini_chart {
+    grid-area: chart;
+    align-self: center;
+    // background: red;
+    height: 100%;
+  }
+  &__coin_value {
+    grid-area: value;
+    align-self: end;
+    text-align: right;
+    font-weight: 500;
+  }
+  &__coin_percentage {
+    grid-area: percentage;
+    align-self: start;
+    text-align: right;
+    font-size: .9em;
+
+    &--positive {
+      color: #31FF00;
+    }
+    &--negative {
+      color: #F00;
+    }
+  }
+}
